@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -14,9 +18,23 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "❌ TypeScript → No  ✅ ESLint → Yes  ✅ Tailwind → Yes  ❌ Use `src/` folder → No  ✅ App Router → Yescd mhc-automationcode .@/*": ["./*"]
-    }
+      "❌ TypeScript → No  ✅ ESLint → Yes  ✅ Tailwind → Yes  ❌ Use `src/` folder → No  ✅ App Router → Yescd mhc-automationcode .@/*": [
+        "./*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
